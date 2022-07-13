@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Gilroy 800';
+  src: url('../fonts/Gilroy-ExtraBold.eot');
+  src: local('../fonts/Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+  url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+  url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Gilroy 700';
@@ -9,7 +19,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 
 
 @font-face {
@@ -41,22 +50,18 @@
   }
 }
 
-
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  @include max-screen(700px){
-    position: relative;
-  }
-  p {
-    margin: 0 auto;
-  }
+  //background: rgba(172,173,139,0.67) !important;
+  //outline: 1px solid limegreen !important;
 }
+
 
 .container {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -66,11 +71,16 @@ header {
   padding-top: 22px;
   padding-bottom: 15px;
   background: #FFFBF7;
+  margin-bottom: 18px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   .header_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12px;
   }
 
   .logo_wrapper {
@@ -78,10 +88,13 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: start;
-    @include max-screen(1150px){
+    @include max-screen(768px) {
+      display: none;
+    }
+    @include max-screen(1150px) {
       align-items: center;
     }
-    @include max-screen(991px){
+    @include max-screen(991px) {
       max-width: 400px;
     }
 
@@ -90,7 +103,7 @@ header {
       max-width: 250px;
       width: 100%;
       margin-right: 30px;
-      @include max-screen(991px){
+      @include max-screen(991px) {
         max-width: 170px;
       }
     }
@@ -105,11 +118,11 @@ header {
       line-height: 18px;
       letter-spacing: 0.08em;
       color: #2B2A28;
-      @include max-screen(1150px){
+      @include max-screen(1150px) {
         font-size: 12px;
         max-width: 180px;
       }
-      @include max-screen(991px){
+      @include max-screen(991px) {
         font-size: 10px;
         max-width: 150px;
       }
@@ -118,6 +131,9 @@ header {
 
   .contact_us {
     max-width: 140px;
+    @include max-screen(768px) {
+      display: none;
+    }
 
     p {
       font-family: 'Gilroy 600', serif;
@@ -128,7 +144,7 @@ header {
       letter-spacing: 0.08em;
       color: #2B2A28;
       margin-bottom: 4px;
-      @include max-screen(991px){
+      @include max-screen(991px) {
         font-size: 10px;
       }
     }
@@ -136,9 +152,11 @@ header {
     .header_messengers {
       display: flex;
       align-items: center;
+
       a {
         display: inline-block;
         margin-right: 4px;
+
         span {
           display: flex;
           justify-content: center;
@@ -186,7 +204,11 @@ header {
 
   .header_tel {
     max-width: 180px;
-    p:first-of-type{
+    @include max-screen(768px) {
+      display: none;
+    }
+
+    p:first-of-type {
       font-family: 'Gilroy 700', serif;
       font-style: normal;
       font-weight: 700;
@@ -195,14 +217,15 @@ header {
       color: #2B2A28;
       margin-bottom: 7px;
       text-align: right;
-      @include max-screen(1150px){
+      @include max-screen(1150px) {
         font-size: 15px;
       }
-      @include max-screen(991px){
+      @include max-screen(991px) {
         font-size: 13px;
       }
     }
-    p:last-of-type{
+
+    p:last-of-type {
       font-family: 'Gilroy 400', serif;
       font-style: normal;
       font-weight: 400;
@@ -211,7 +234,7 @@ header {
       letter-spacing: 0.08em;
       color: #2B2A28;
       text-align: end;
-      @include max-screen(1150px){
+      @include max-screen(1150px) {
         font-size: 10px;
       }
     }
@@ -219,10 +242,14 @@ header {
 
   .header_buttom {
     max-width: 160px;
-    a{
+    @include max-screen(768px) {
+      display: none;
+    }
+
+    a {
       text-decoration: none;
       display: inline-block;
-      font-family: 'Gilroy 700',  serif;
+      font-family: 'Gilroy 700', serif;
       font-style: normal;
       font-weight: 700;
       font-size: 13px;
@@ -234,14 +261,15 @@ header {
       box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
       border-radius: 4px;
       margin-bottom: 7px;
-      @include max-screen(1150px){
+      @include max-screen(1150px) {
         padding: 10px 17px;
       }
-      @include max-screen(991px){
+      @include max-screen(991px) {
         font-size: 10px;
       }
     }
-    p{
+
+    p {
       font-family: 'Gilroy 400', serif;
       font-style: normal;
       font-weight: 400;
@@ -250,7 +278,7 @@ header {
       letter-spacing: 0.08em;
       color: #2B2A28;
       text-align: center;
-      @include max-screen(991px){
+      @include max-screen(991px) {
         font-size: 9px;
       }
     }
@@ -262,19 +290,124 @@ header {
     align-items: center;
     position: relative;
     top: -12px;
-    a{
+    @include max-screen(768px) {
+      display: none;
+    }
+
+    a {
       display: inline-block;
       margin-right: 5px;
-      img{
+
+      img {
         display: block;
         width: 21px;
       }
     }
-    i{
+
+    i {
       font-size: 12px;
     }
   }
 }
 
+.main_slider {
+  height: 100vh;
+  background: #FFFBF7;
+  display: flex;
+  align-items: center;
+  .owl-carousel_1{
+    margin-top: 40px;
+  }
 
+  .first_slide {
+    display: flex;
+
+    .main_slider_left {
+      padding-top: 120px;
+      max-width: 551px;
+
+      h1 {
+        font-family: 'Gilroy 800', serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 50px;
+        color: #2B2A28;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #2B2A28;
+        margin-bottom: 26px;
+      }
+
+      .slider_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a:first-of-type {
+          display: inline-block;
+          font-family: 'Gilroy 700', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 20px 30px;
+          background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+          box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+          border-radius: 4px;
+          text-decoration: none;
+        }
+
+        a:last-of-type {
+          font-family: 'Gilroy 600', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          color: #CB8734;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+
+          span {
+            border: 1.5px solid #CB8734;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            &:before{
+              content: "\f105";
+              font-family: "Font Awesome 6 Free";
+              font-weight: 900;
+            }
+          }
+
+
+        }
+      }
+    }
+
+    .main_slider_right {
+      max-width: 615px;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
 

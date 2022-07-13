@@ -1,5 +1,11 @@
 @import url(menu.css);
 @font-face {
+  font-family: 'Gilroy 800';
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: local("../fonts/Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
   font-family: 'Gilroy 700';
   src: url("../fonts/Gilroy-Bold.eot");
   src: local("../fonts/Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
@@ -17,35 +23,38 @@
   src: local("../fonts/Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
-  @media screen and (max-width: 700px) {
-    body {
-      position: relative; } }
-  body p {
-    margin: 0 auto; }
 
 .container {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
 
 header {
   padding-top: 22px;
   padding-bottom: 15px;
-  background: #FFFBF7; }
+  background: #FFFBF7;
+  margin-bottom: 18px;
+  position: absolute;
+  top: 0;
+  width: 100%; }
   header .header_row {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 12px; }
   header .logo_wrapper {
     max-width: 540px;
     justify-content: space-between;
     display: flex;
     align-items: start; }
+    @media screen and (max-width: 768px) {
+      header .logo_wrapper {
+        display: none; } }
     @media screen and (max-width: 1150px) {
       header .logo_wrapper {
         align-items: center; } }
@@ -80,6 +89,9 @@ header {
           max-width: 150px; } }
   header .contact_us {
     max-width: 140px; }
+    @media screen and (max-width: 768px) {
+      header .contact_us {
+        display: none; } }
     header .contact_us p {
       font-family: 'Gilroy 600', serif;
       font-style: normal;
@@ -130,6 +142,9 @@ header {
             height: 13px; }
   header .header_tel {
     max-width: 180px; }
+    @media screen and (max-width: 768px) {
+      header .header_tel {
+        display: none; } }
     header .header_tel p:first-of-type {
       font-family: 'Gilroy 700', serif;
       font-style: normal;
@@ -159,10 +174,13 @@ header {
           font-size: 10px; } }
   header .header_buttom {
     max-width: 160px; }
+    @media screen and (max-width: 768px) {
+      header .header_buttom {
+        display: none; } }
     header .header_buttom a {
       text-decoration: none;
       display: inline-block;
-      font-family: 'Gilroy 700',  serif;
+      font-family: 'Gilroy 700', serif;
       font-style: normal;
       font-weight: 700;
       font-size: 13px;
@@ -198,6 +216,9 @@ header {
     align-items: center;
     position: relative;
     top: -12px; }
+    @media screen and (max-width: 768px) {
+      header .header_language {
+        display: none; } }
     header .header_language a {
       display: inline-block;
       margin-right: 5px; }
@@ -206,5 +227,81 @@ header {
         width: 21px; }
     header .header_language i {
       font-size: 12px; }
+
+.main_slider {
+  height: 100vh;
+  background: #FFFBF7;
+  display: flex;
+  align-items: center; }
+  .main_slider .owl-carousel_1 {
+    margin-top: 40px; }
+  .main_slider .first_slide {
+    display: flex; }
+    .main_slider .first_slide .main_slider_left {
+      padding-top: 120px;
+      max-width: 551px; }
+      .main_slider .first_slide .main_slider_left h1 {
+        font-family: 'Gilroy 800', serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 50px;
+        color: #2B2A28;
+        margin-bottom: 8px; }
+      .main_slider .first_slide .main_slider_left p {
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #2B2A28;
+        margin-bottom: 26px; }
+      .main_slider .first_slide .main_slider_left .slider_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .main_slider .first_slide .main_slider_left .slider_button a:first-of-type {
+          display: inline-block;
+          font-family: 'Gilroy 700', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 20px 30px;
+          background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+          box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+          border-radius: 4px;
+          text-decoration: none; }
+        .main_slider .first_slide .main_slider_left .slider_button a:last-of-type {
+          font-family: 'Gilroy 600', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          color: #CB8734;
+          text-decoration: none;
+          display: flex;
+          align-items: center; }
+          .main_slider .first_slide .main_slider_left .slider_button a:last-of-type span {
+            border: 1.5px solid #CB8734;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px; }
+            .main_slider .first_slide .main_slider_left .slider_button a:last-of-type span:before {
+              content: "\f105";
+              font-family: "Font Awesome 6 Free";
+              font-weight: 900; }
+    .main_slider .first_slide .main_slider_right {
+      max-width: 615px; }
+      .main_slider .first_slide .main_slider_right img {
+        display: block;
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

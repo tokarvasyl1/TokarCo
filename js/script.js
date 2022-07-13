@@ -87,3 +87,22 @@ function removeSubmenu() {
         }, 500);
     }
 }
+
+
+$(document).ready(function() {
+    $(".owl-carousel_1").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: true,
+        navText: ['', ' '],
+        dotsEach: true,
+
+        responsive: {
+
+            1000: {
+                items: 1
+            }
+        }
+    });
+});
+
