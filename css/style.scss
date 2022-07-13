@@ -1,0 +1,280 @@
+
+@font-face {
+  font-family: 'Gilroy 700';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: local('../fonts/Gilroy Bold'), local('Gilroy-Bold'),
+  url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Gilroy 600';
+  src: url('../fonts/Gilroy-SemiBold.eot');
+  src: local('../fonts/Gilroy SemiBold'), local('Gilroy-SemiBold'),
+  url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy 400';
+  src: url('../fonts/Gilroy-Regular.eot');
+  src: local('../fonts/Gilroy Regular'), local('Gilroy-Regular'),
+  url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "menu.css";
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @include max-screen(700px){
+    position: relative;
+  }
+  p {
+    margin: 0 auto;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+header {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  background: #FFFBF7;
+
+  .header_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo_wrapper {
+    max-width: 540px;
+    justify-content: space-between;
+    display: flex;
+    align-items: start;
+    @include max-screen(1150px){
+      align-items: center;
+    }
+    @include max-screen(991px){
+      max-width: 400px;
+    }
+
+    img {
+      display: block;
+      max-width: 250px;
+      width: 100%;
+      margin-right: 30px;
+      @include max-screen(991px){
+        max-width: 170px;
+      }
+    }
+
+    p {
+      max-width: 255px;
+      margin: 0;
+      font-family: 'Gilroy 600', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.08em;
+      color: #2B2A28;
+      @include max-screen(1150px){
+        font-size: 12px;
+        max-width: 180px;
+      }
+      @include max-screen(991px){
+        font-size: 10px;
+        max-width: 150px;
+      }
+    }
+  }
+
+  .contact_us {
+    max-width: 140px;
+
+    p {
+      font-family: 'Gilroy 600', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.08em;
+      color: #2B2A28;
+      margin-bottom: 4px;
+      @include max-screen(991px){
+        font-size: 10px;
+      }
+    }
+
+    .header_messengers {
+      display: flex;
+      align-items: center;
+      a {
+        display: inline-block;
+        margin-right: 4px;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #0DC143;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+
+          &:before {
+            display: inline-block;
+            content: "";
+            background: url("../images/whatsup_icon.webp") 1px 0 no-repeat;
+            width: 14px;
+            height: 15px;
+          }
+        }
+
+        &:first-of-type span {
+          background: #419FD9;
+
+          &:before {
+            display: inline-block;
+            content: "";
+            background: url("../images/telegram_icon.webp") -2px 0 no-repeat;
+            width: 12px;
+            height: 10px;
+          }
+        }
+
+        &:last-of-type span {
+          background: #675DA9;
+
+          &:before {
+            display: inline-block;
+            content: "";
+            background: url("../images/viber_icon.webp") 1px 0 no-repeat;
+            width: 13px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .header_tel {
+    max-width: 180px;
+    p:first-of-type{
+      font-family: 'Gilroy 700', serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 16px;
+      color: #2B2A28;
+      margin-bottom: 7px;
+      text-align: right;
+      @include max-screen(1150px){
+        font-size: 15px;
+      }
+      @include max-screen(991px){
+        font-size: 13px;
+      }
+    }
+    p:last-of-type{
+      font-family: 'Gilroy 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.08em;
+      color: #2B2A28;
+      text-align: end;
+      @include max-screen(1150px){
+        font-size: 10px;
+      }
+    }
+  }
+
+  .header_buttom {
+    max-width: 160px;
+    a{
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Gilroy 700',  serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 15px 25px;
+      background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+      box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+      border-radius: 4px;
+      margin-bottom: 7px;
+      @include max-screen(1150px){
+        padding: 10px 17px;
+      }
+      @include max-screen(991px){
+        font-size: 10px;
+      }
+    }
+    p{
+      font-family: 'Gilroy 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 18px;
+      letter-spacing: 0.08em;
+      color: #2B2A28;
+      text-align: center;
+      @include max-screen(991px){
+        font-size: 9px;
+      }
+    }
+  }
+
+  .header_language {
+    max-width: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -12px;
+    a{
+      display: inline-block;
+      margin-right: 5px;
+      img{
+        display: block;
+        width: 21px;
+      }
+    }
+    i{
+      font-size: 12px;
+    }
+  }
+}
+
+
+
