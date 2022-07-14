@@ -43,6 +43,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gilroy 300';
+  src: url('../fonts/Gilroy-Light.eot');
+  src: local('../fonts/Gilroy Light'), local('Gilroy-Light'),
+  url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Light.woff') format('woff'),
+  url('../fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @import "menu.css";
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -75,6 +86,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1;
 
   .header_row {
     display: flex;
@@ -156,6 +168,7 @@ header {
       a {
         display: inline-block;
         margin-right: 4px;
+        text-decoration: none;
 
         span {
           display: flex;
@@ -168,10 +181,12 @@ header {
 
           &:before {
             display: inline-block;
-            content: "";
-            background: url("../images/whatsup_icon.webp") 1px 0 no-repeat;
-            width: 14px;
-            height: 15px;
+            content: "\f409";
+            font-family: "Font Awesome 6 Brands", serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: white;
+
           }
         }
 
@@ -179,11 +194,13 @@ header {
           background: #419FD9;
 
           &:before {
+            content: "\f1d8";
             display: inline-block;
-            content: "";
-            background: url("../images/telegram_icon.webp") -2px 0 no-repeat;
-            width: 12px;
-            height: 10px;
+            font-family: "Font Awesome 6 Free", serif;
+            font-weight: 400;
+            font-size: 13px;
+            position: relative;
+            left: -1px;
           }
         }
 
@@ -192,10 +209,11 @@ header {
 
           &:before {
             display: inline-block;
-            content: "";
-            background: url("../images/viber_icon.webp") 1px 0 no-repeat;
-            width: 13px;
-            height: 13px;
+            content: "\f232";
+
+            font-weight: 400;
+            font-size: 17px;
+            color: white;
           }
         }
       }
@@ -315,8 +333,9 @@ header {
   background: #FFFBF7;
   display: flex;
   align-items: center;
-  .owl-carousel_1{
-    margin-top: 40px;
+
+  .owl-carousel_1 {
+    margin-top: 200px;
   }
 
   .first_slide {
@@ -348,7 +367,6 @@ header {
 
       .slider_button {
         display: flex;
-        justify-content: space-between;
         align-items: center;
 
         a:first-of-type {
@@ -366,6 +384,7 @@ header {
           box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
           border-radius: 4px;
           text-decoration: none;
+          margin-right: 80px;
         }
 
         a:last-of-type {
@@ -381,20 +400,20 @@ header {
 
           span {
             border: 1.5px solid #CB8734;
-            width: 30px;
             height: 30px;
+            width: 30px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 12px;
-            &:before{
+
+            &:before {
               content: "\f105";
-              font-family: "Font Awesome 6 Free";
+              font-family: "Font Awesome 6 Free", serif;
               font-weight: 900;
             }
           }
-
 
         }
       }
@@ -406,6 +425,235 @@ header {
       img {
         display: block;
         width: 100%;
+      }
+    }
+  }
+}
+
+.why_we {
+  height: 400px;
+  background: #FFFBF7 0 no-repeat;
+  position: relative;
+
+  .main_bg {
+    height: 200px;
+
+    .preferences {
+      background: #FFFFFF;
+      box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
+      border-radius: 8px;
+      padding: 56px 60px 50px 60px;
+      position: relative;
+      top: 40px;
+
+      h2 {
+        font-family: 'Gilroy 700', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 58px;
+        color: #2B2A28;
+        margin-bottom: 33px;
+      }
+
+      .preferences_icons {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .pref1 {
+          max-width: 240px;
+          padding: 5px;
+
+        }
+
+        img {
+          display: inline-block;
+        }
+
+        p {
+          font-family: 'Gilroy 700', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 30px;
+          color: #2B2A28;
+        }
+      }
+    }
+  }
+
+  .white_bg {
+    background: white;
+    height: 200px;
+  }
+}
+
+.catalog {
+  padding: 50px 0 150px 0;
+  background: white url("../images/catalog_bg.webp") 700px 150px no-repeat;
+
+  h2 {
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    color: #2B2A28;
+    margin-bottom: 26px;
+  }
+
+  .upper_side {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .zhiloe {
+      max-width: 370px;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
+      padding: 5px 5px 50px 5px;
+
+      .category_photo {
+        max-width: 360px;
+        border-bottom-left-radius: 36px;
+        border-top-right-radius: 36px;
+        overflow: hidden;
+        height: 230px;
+        margin-bottom: 36px;
+        width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .category_description {
+        max-width: 301px;
+        margin-left: 50px;
+      }
+
+      h3 {
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        color: #2B2A28;
+        margin-bottom: 9px;
+      }
+
+      p {
+        font-family: 'Gilroy 300', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 28px;
+        color: #2B2A28;
+        margin-bottom: 14px;
+      }
+
+      a {
+        display: flex;
+        font-family: 'Gilroy 600', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        color: #CB8734;
+        text-decoration: none;
+        align-items: center;
+
+        span {
+          margin-right: 12px;
+          display: flex;
+          width: 30px;
+          height: 30px;
+          border: 1.5px solid #CB8734;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          &:before {
+            content: "\f105";
+            font-family: "Font Awesome 6 Free", serif;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+  .down_side{
+    max-width: 770px;
+    padding: 5px 5px  5px 50px;
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0 40px 0 0;
+    display: flex;
+    justify-content: space-between;
+    .category_description{
+      max-width: 236px;
+      padding-top: 50px;
+      h3{
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        color: #2B2A28;
+        margin-bottom: 8px;
+      }
+      p{
+        font-family: 'Gilroy 300', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 28px;
+        color: #2B2A28;
+        margin-bottom: 37px;
+      }
+      a{
+        font-family: 'Gilroy 600', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #CB8734;
+        text-decoration: none;
+        span {
+          margin-right: 12px;
+          display: flex;
+          width: 30px;
+          height: 30px;
+          border: 1.5px solid #CB8734;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          &:before {
+            content: "\f105";
+            font-family: "Font Awesome 6 Free", serif;
+            font-weight: 900;
+          }
+
+        }
+      }
+    }
+    .category_photo{
+      max-width: 420px;
+      width: 100%;
+      height: 310px;
+      background: #FFFFFF;
+      box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
+      border-radius: 0 36px 0 36px;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 100%;
+
       }
     }
   }
