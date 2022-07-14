@@ -155,7 +155,7 @@ header {
           color: white; }
 
 .header_tel {
-  max-width: 180px; }
+  max-width: 190px; }
   @media screen and (max-width: 768px) {
     .header_tel {
       display: none; } }

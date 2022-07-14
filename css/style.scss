@@ -225,7 +225,7 @@ header {
   }
 
   .header_tel {
-    max-width: 180px;
+    max-width: 190px;
     @include max-screen(768px) {
       display: none;
     }
