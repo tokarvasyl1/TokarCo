@@ -16,9 +16,10 @@ nav {
   @media screen and (max-width: 768px) {
     nav {
       --transition-time: 500ms;
-      position: absolute;
+      position: fixed;
       top: 0;
-      width: 500px;
+      left: 0;
+      width: 100%;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -162,8 +163,8 @@ nav {
     align-items: center;
     --icon-width: 25px;
     position: absolute;
-    top: 5%;
-    right: -20%;
+    top: 0;
+    right: -50px;
     width: calc(var(--icon-width) + 25px);
     height: calc(var(--icon-width) + 25px);
     flex-direction: column;

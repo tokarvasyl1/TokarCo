@@ -86,13 +86,17 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 
   .header_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+    position: relative;
+    @include max-screen(768px){
+      justify-content: center;
+    }
   }
 
   .logo_wrapper {
@@ -100,9 +104,7 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: start;
-    @include max-screen(768px) {
-      display: none;
-    }
+
     @include max-screen(1150px) {
       align-items: center;
     }
@@ -138,12 +140,14 @@ header {
         font-size: 10px;
         max-width: 150px;
       }
+      @include max-screen(768px){
+        display: none;
+      }
     }
   }
 
   .contact_us {
     max-width: 140px;
-    @include max-screen(768px) {
       display: none;
     }
 
@@ -326,7 +330,24 @@ header {
       font-size: 12px;
     }
   }
-}
+  .mobile_phone_icon{
+    display: none;
+    @include max-screen(768px){
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 15px;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      background: #D6D6D6;
+      border-radius: 4px;
+      color: white;
+    }
+  }
+
 
 .main_slider {
   height: 100vh;

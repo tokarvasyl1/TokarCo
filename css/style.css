@@ -48,20 +48,21 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
   header .header_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      header .header_row {
+        justify-content: center; } }
   header .logo_wrapper {
     max-width: 540px;
     justify-content: space-between;
     display: flex;
     align-items: start; }
-    @media screen and (max-width: 768px) {
-      header .logo_wrapper {
-        display: none; } }
     @media screen and (max-width: 1150px) {
       header .logo_wrapper {
         align-items: center; } }
@@ -94,150 +95,170 @@ header {
         header .logo_wrapper p {
           font-size: 10px;
           max-width: 150px; } }
+      @media screen and (max-width: 768px) {
+        header .logo_wrapper p {
+          display: none; } }
   header .contact_us {
-    max-width: 140px; }
-    @media screen and (max-width: 768px) {
-      header .contact_us {
-        display: none; } }
-    header .contact_us p {
-      font-family: 'Gilroy 600', serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 18px;
-      letter-spacing: 0.08em;
-      color: #2B2A28;
-      margin-bottom: 4px; }
-      @media screen and (max-width: 991px) {
-        header .contact_us p {
-          font-size: 10px; } }
-    header .contact_us .header_messengers {
-      display: flex;
-      align-items: center; }
-      header .contact_us .header_messengers a {
-        display: inline-block;
-        margin-right: 4px;
-        text-decoration: none; }
-        header .contact_us .header_messengers a span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #0DC143;
-          width: 26px;
-          height: 26px;
-          border-radius: 50%; }
-          header .contact_us .header_messengers a span:before {
-            display: inline-block;
-            content: "\f409";
-            font-family: "Font Awesome 6 Brands", serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: white; }
-        header .contact_us .header_messengers a:first-of-type span {
-          background: #419FD9; }
-          header .contact_us .header_messengers a:first-of-type span:before {
-            content: "\f1d8";
-            display: inline-block;
-            font-family: "Font Awesome 6 Free", serif;
-            font-weight: 400;
-            font-size: 13px;
-            position: relative;
-            left: -1px; }
-        header .contact_us .header_messengers a:last-of-type span {
-          background: #675DA9; }
-          header .contact_us .header_messengers a:last-of-type span:before {
-            display: inline-block;
-            content: "\f232";
-            font-weight: 400;
-            font-size: 17px;
-            color: white; }
-  header .header_tel {
-    max-width: 180px; }
-    @media screen and (max-width: 768px) {
-      header .header_tel {
-        display: none; } }
-    header .header_tel p:first-of-type {
-      font-family: 'Gilroy 700', serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 16px;
-      color: #2B2A28;
-      margin-bottom: 7px;
-      text-align: right; }
-      @media screen and (max-width: 1150px) {
-        header .header_tel p:first-of-type {
-          font-size: 15px; } }
-      @media screen and (max-width: 991px) {
-        header .header_tel p:first-of-type {
-          font-size: 13px; } }
-    header .header_tel p:last-of-type {
-      font-family: 'Gilroy 400', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
-      letter-spacing: 0.08em;
-      color: #2B2A28;
-      text-align: end; }
-      @media screen and (max-width: 1150px) {
-        header .header_tel p:last-of-type {
-          font-size: 10px; } }
-  header .header_buttom {
-    max-width: 160px; }
-    @media screen and (max-width: 768px) {
-      header .header_buttom {
-        display: none; } }
-    header .header_buttom a {
-      text-decoration: none;
-      display: inline-block;
-      font-family: 'Gilroy 700', serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 16px;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 15px 25px;
-      background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
-      box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
-      border-radius: 4px;
-      margin-bottom: 7px; }
-      @media screen and (max-width: 1150px) {
-        header .header_buttom a {
-          padding: 10px 17px; } }
-      @media screen and (max-width: 991px) {
-        header .header_buttom a {
-          font-size: 10px; } }
-    header .header_buttom p {
-      font-family: 'Gilroy 400', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 11px;
-      line-height: 18px;
-      letter-spacing: 0.08em;
-      color: #2B2A28;
-      text-align: center; }
-      @media screen and (max-width: 991px) {
-        header .header_buttom p {
-          font-size: 9px; } }
-  header .header_language {
-    max-width: 35px;
+    max-width: 140px;
+    display: none; }
+  header p {
+    font-family: 'Gilroy 600', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    color: #2B2A28;
+    margin-bottom: 4px; }
+    @media screen and (max-width: 991px) {
+      header p {
+        font-size: 10px; } }
+  header .header_messengers {
     display: flex;
-    align-items: center;
-    position: relative;
-    top: -12px; }
-    @media screen and (max-width: 768px) {
-      header .header_language {
-        display: none; } }
-    header .header_language a {
+    align-items: center; }
+    header .header_messengers a {
       display: inline-block;
-      margin-right: 5px; }
-      header .header_language a img {
-        display: block;
-        width: 21px; }
-    header .header_language i {
-      font-size: 12px; }
+      margin-right: 4px;
+      text-decoration: none; }
+      header .header_messengers a span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0DC143;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%; }
+        header .header_messengers a span:before {
+          display: inline-block;
+          content: "\f409";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: white; }
+      header .header_messengers a:first-of-type span {
+        background: #419FD9; }
+        header .header_messengers a:first-of-type span:before {
+          content: "\f1d8";
+          display: inline-block;
+          font-family: "Font Awesome 6 Free", serif;
+          font-weight: 400;
+          font-size: 13px;
+          position: relative;
+          left: -1px; }
+      header .header_messengers a:last-of-type span {
+        background: #675DA9; }
+        header .header_messengers a:last-of-type span:before {
+          display: inline-block;
+          content: "\f232";
+          font-weight: 400;
+          font-size: 17px;
+          color: white; }
+
+.header_tel {
+  max-width: 180px; }
+  @media screen and (max-width: 768px) {
+    .header_tel {
+      display: none; } }
+  .header_tel p:first-of-type {
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #2B2A28;
+    margin-bottom: 7px;
+    text-align: right; }
+    @media screen and (max-width: 1150px) {
+      .header_tel p:first-of-type {
+        font-size: 15px; } }
+    @media screen and (max-width: 991px) {
+      .header_tel p:first-of-type {
+        font-size: 13px; } }
+  .header_tel p:last-of-type {
+    font-family: 'Gilroy 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    color: #2B2A28;
+    text-align: end; }
+    @media screen and (max-width: 1150px) {
+      .header_tel p:last-of-type {
+        font-size: 10px; } }
+
+.header_buttom {
+  max-width: 160px; }
+  @media screen and (max-width: 768px) {
+    .header_buttom {
+      display: none; } }
+  .header_buttom a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+    box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+    border-radius: 4px;
+    margin-bottom: 7px; }
+    @media screen and (max-width: 1150px) {
+      .header_buttom a {
+        padding: 10px 17px; } }
+    @media screen and (max-width: 991px) {
+      .header_buttom a {
+        font-size: 10px; } }
+  .header_buttom p {
+    font-family: 'Gilroy 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    color: #2B2A28;
+    text-align: center; }
+    @media screen and (max-width: 991px) {
+      .header_buttom p {
+        font-size: 9px; } }
+
+.header_language {
+  max-width: 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -12px; }
+  @media screen and (max-width: 768px) {
+    .header_language {
+      display: none; } }
+  .header_language a {
+    display: inline-block;
+    margin-right: 5px; }
+    .header_language a img {
+      display: block;
+      width: 21px; }
+  .header_language i {
+    font-size: 12px; }
+
+.mobile_phone_icon {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .mobile_phone_icon {
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 15px; } }
+  .mobile_phone_icon a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background: #D6D6D6;
+    border-radius: 4px;
+    color: white; }
 
 .main_slider {
   height: 100vh;
