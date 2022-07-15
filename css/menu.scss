@@ -329,6 +329,9 @@ nav .nav-links li a{
   color: #2B2A28;
   padding-top: 25px;
   padding-bottom: 25px;
+  @include max-screen(991px){
+    font-size: 12px;
+  }
 }
 nav .nav-links li:nth-child(1) a{
   color: white;

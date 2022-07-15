@@ -90,7 +90,24 @@ function removeSubmenu() {
 
 
 $(document).ready(function() {
-    $(".owl-carousel_1").owlCarousel({
+    $(".owl-carousel1").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: true,
+        navText: ['', ' '],
+        dotsEach: true,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+    $(".owl-carousel2").owlCarousel({
         loop: true,
         nav: true,
         dots: true,
@@ -108,3 +125,23 @@ $(document).ready(function() {
     });
 });
 
+
+
+// $(document).ready(function() {
+//     $(".owl-carousel2").owlCarousel({
+//         loop: true,
+//         nav: true,
+//         dots: true,
+//         navText: ['', ' '],
+//         dotsEach: true,
+//
+//         responsive: {
+//             0: {
+//                 items: 1
+//             },
+//             1000: {
+//                 items: 1
+//             }
+//         }
+//     });
+// });
