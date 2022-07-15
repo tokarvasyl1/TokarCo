@@ -773,7 +773,8 @@ header {
   .construction .flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0; }
     @media screen and (max-width: 1139px) {
       .construction .flex {
         justify-content: center; } }

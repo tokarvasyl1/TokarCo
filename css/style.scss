@@ -1029,6 +1029,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
     @include max-screen(1139px){
       justify-content: center;
     }
