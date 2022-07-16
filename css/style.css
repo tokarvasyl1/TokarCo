@@ -237,7 +237,6 @@ header {
         font-weight: 700;
         font-size: 13px;
         line-height: 16px;
-        text-align: center;
         color: #FFFFFF; }
         @media screen and (max-width: 991px) {
           header .header_row .header_button .btn_header {
@@ -816,11 +815,222 @@ header {
       @media screen and (max-width: 450px) {
         .construction .flex .constr_item .const3_img {
           top: -10px; } }
+  .construction .const-slider {
+    text-align: center; }
+  .construction .owl-carousel2 {
+    margin-bottom: 40px; }
   .construction .construction_slide1 {
     height: 520px;
     width: 100%;
-    border: 1px solid black;
     border-radius: 0 100px;
     overflow: hidden; }
+    .construction .construction_slide1 img {
+      display: block;
+      width: 100%; }
+  .construction a {
+    background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+    box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+    border-radius: 4px;
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 20px 30px; }
+
+.about_company {
+  padding: 140px 0 140px 0;
+  background: url("../images/about_bg_top.png") 100% 0 no-repeat, url("../images/about_bg_bottom.png") 0 100% no-repeat; }
+  .about_company .container:last-of-type {
+    position: relative; }
+  .about_company h2 {
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2B2A28;
+    margin-bottom: 67px; }
+    @media screen and (max-width: 505px) {
+      .about_company h2 {
+        font-size: 30px;
+        text-align: center; } }
+  .about_company .about_image {
+    position: relative;
+    margin-bottom: 180px; }
+    .about_company .about_image img:first-of-type {
+      display: block;
+      width: 100%;
+      border-radius: 0 100px; }
+      @media screen and (max-width: 620px) {
+        .about_company .about_image img:first-of-type {
+          display: none; } }
+    .about_company .about_image img:last-of-type {
+      position: absolute;
+      top: -70px;
+      left: 350px; }
+      @media screen and (max-width: 1100px) {
+        .about_company .about_image img:last-of-type {
+          left: 300px; } }
+      @media screen and (max-width: 1000px) {
+        .about_company .about_image img:last-of-type {
+          width: 30%;
+          left: 320px; } }
+      @media screen and (max-width: 850px) {
+        .about_company .about_image img:last-of-type {
+          left: 320px; } }
+      @media screen and (max-width: 810px) {
+        .about_company .about_image img:last-of-type {
+          left: 250px; } }
+      @media screen and (max-width: 710px) {
+        .about_company .about_image img:last-of-type {
+          left: 220px; } }
+      @media screen and (max-width: 710px) {
+        .about_company .about_image img:last-of-type {
+          left: 200px;
+          top: 0; } }
+      @media screen and (max-width: 620px) {
+        .about_company .about_image img:last-of-type {
+          position: absolute;
+          left: 200px;
+          top: -70px; } }
+      @media screen and (max-width: 510px) {
+        .about_company .about_image img:last-of-type {
+          left: 150px;
+          top: -50px; } }
+      @media screen and (max-width: 445px) {
+        .about_company .about_image img:last-of-type {
+          left: 150px;
+          top: -30px;
+          width: 40%; } }
+      @media screen and (max-width: 370px) {
+        .about_company .about_image img:last-of-type {
+          left: 100px; } }
+  .about_company .description_bg {
+    max-width: 570px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    padding: 41px 50px 35px 119px;
+    position: absolute;
+    bottom: -90px;
+    left: 300px; }
+    @media screen and (max-width: 1100px) {
+      .about_company .description_bg {
+        left: 250px; } }
+    @media screen and (max-width: 1000px) {
+      .about_company .description_bg {
+        left: 200px; } }
+    @media screen and (max-width: 850px) {
+      .about_company .description_bg {
+        left: 200px;
+        max-width: 450px; } }
+    @media screen and (max-width: 810px) {
+      .about_company .description_bg {
+        left: 150px; } }
+    @media screen and (max-width: 710px) {
+      .about_company .description_bg {
+        left: 100px;
+        padding: 15px 15px 15px 100px; } }
+    @media screen and (max-width: 620px) {
+      .about_company .description_bg {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: auto; } }
+    @media screen and (max-width: 445px) {
+      .about_company .description_bg {
+        padding: 15px 15px 15px 60px; } }
+    .about_company .description_bg .description {
+      position: relative; }
+      .about_company .description_bg .description .s_00006 {
+        position: absolute;
+        top: 0;
+        left: -80px; }
+        @media screen and (max-width: 445px) {
+          .about_company .description_bg .description .s_00006 {
+            width: 30px;
+            left: -50px; } }
+      .about_company .description_bg .description h4 {
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #2B2A28;
+        margin-bottom: 6px; }
+        @media screen and (max-width: 850px) {
+          .about_company .description_bg .description h4 {
+            font-size: 18px; } }
+      .about_company .description_bg .description p {
+        font-family: 'Gilroy 300', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: #2B2A28; }
+        @media screen and (max-width: 850px) {
+          .about_company .description_bg .description p {
+            font-size: 12px; } }
+  .about_company .about_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 38px; }
+    @media screen and (max-width: 1109px) {
+      .about_company .about_items {
+        justify-content: space-around; } }
+    .about_company .about_items .item {
+      flex-basis: 270px;
+      height: 181px;
+      flex-shrink: 0; }
+      @media screen and (max-width: 1109px) {
+        .about_company .about_items .item {
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 570px) {
+        .about_company .about_items .item {
+          margin-bottom: 40px; } }
+      .about_company .about_items .item p {
+        font-family: 'Gilroy 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 30px;
+        color: #CB8734;
+        padding-bottom: 29px;
+        border-bottom: 2px solid #CB8734;
+        margin-bottom: 18px; }
+        .about_company .about_items .item p span {
+          font-family: 'Gilroy 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px;
+          color: #CB8734;
+          font-size: 30px; }
+      .about_company .about_items .item span {
+        font-family: 'Gilroy 300', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #2B2A28; }
+  .about_company .container:last-of-type {
+    text-align: center; }
+  .about_company a {
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+    box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+    border-radius: 4px;
+    font-family: 'Gilroy 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */
