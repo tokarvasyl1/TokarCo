@@ -16,7 +16,7 @@
     </inspection_tool>
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
-        <language minSize="12" name="Style Sheets" />
+        <language minSize="34" name="Style Sheets" />
       </Languages>
     </inspection_tool>
   </profile>

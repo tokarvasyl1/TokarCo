@@ -144,22 +144,17 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function(){
+    $(".accordion").on("click", ".heading", function() {
 
-// $(document).ready(function() {
-//     $(".owl-carousel2").owlCarousel({
-//         loop: true,
-//         nav: true,
-//         dots: true,
-//         navText: ['', ' '],
-//         dotsEach: true,
-//
-//         responsive: {
-//             0: {
-//                 items: 1
-//             },
-//             1000: {
-//                 items: 1
-//             }
-//         }
-//     });
-// });
+        $(this).toggleClass("active").next().slideToggle();
+
+        $(".contents").not($(this).next()).slideUp(300);
+
+        $(this).siblings().removeClass("active");
+    });
+});
+
+
+
+
