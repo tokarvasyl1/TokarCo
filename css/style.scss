@@ -1868,7 +1868,6 @@ footer {
   }
   .goods_block{
     width: 100%;
-    border: 2px solid black;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -1907,7 +1906,7 @@ footer {
         .size{
           width: 104px;
           margin-left: 18px;
-          border: 1px solid black;
+
           display: flex;
           img{
             width: 24px;
@@ -1927,19 +1926,41 @@ footer {
           }
         }
       }
-      a{
-        font-family: 'Gilroy 600', serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
-        box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
-        border-radius: 4px;
-        padding: 10px 10px;
-        display: inline-block;
+
+      .price{
+        max-width: 244px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+          font-family: 'Gilroy 600', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+          box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+          border-radius: 4px;
+          padding: 10px 10px;
+          display: block;
+          margin-left: 18px;
+        }
+        p{
+          display: block;
+          font-family: 'Gilroy 700', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          color: #2B2A28;
+          margin-bottom: 0;
+
+        }
+
       }
     }
   }
