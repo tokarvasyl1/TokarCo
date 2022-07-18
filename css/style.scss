@@ -1784,7 +1784,7 @@ footer {
   .filter_block {
     max-width:  270px;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 20px;
     align-self: start;
     .accordion {
       max-width: 270px;
@@ -1867,6 +1867,7 @@ footer {
     }
   }
   .goods_block{
+    width: 100%;
     border: 2px solid black;
     justify-content: space-between;
     display: flex;
@@ -1925,6 +1926,20 @@ footer {
             color: #2B2A28;
           }
         }
+      }
+      a{
+        font-family: 'Gilroy 600', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+        box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+        border-radius: 4px;
+        padding: 10px 10px;
+        display: inline-block;
       }
     }
   }

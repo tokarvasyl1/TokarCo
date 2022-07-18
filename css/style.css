@@ -1368,7 +1368,7 @@ footer {
   .catalog_item .filter_block {
     max-width: 270px;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 20px;
     align-self: start; }
     .catalog_item .filter_block .accordion {
       max-width: 270px;
@@ -1427,6 +1427,7 @@ footer {
         line-height: 22px;
         color: #2B2A28; }
   .catalog_item .goods_block {
+    width: 100%;
     border: 2px solid black;
     justify-content: space-between;
     display: flex;
@@ -1478,5 +1479,18 @@ footer {
             line-height: 24px;
             letter-spacing: 0.1em;
             color: #2B2A28; }
+      .catalog_item .goods_block .goods_item_bg a {
+        font-family: 'Gilroy 600', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+        box-shadow: 0 4px 4px rgba(203, 135, 52, 0.2);
+        border-radius: 4px;
+        padding: 10px 10px;
+        display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
