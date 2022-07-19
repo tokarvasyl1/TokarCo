@@ -1349,6 +1349,9 @@ footer {
 .catalog_item {
   background: #E5E5E5;
   padding: 19px 0 0 145px; }
+  .catalog_item .name_search {
+    justify-content: space-between;
+    margin-bottom: 40px; }
   .catalog_item p {
     font-family: 'Gilroy 400', serif;
     font-style: normal;
@@ -1363,8 +1366,36 @@ footer {
     font-weight: 700;
     font-size: 36px;
     line-height: 58px;
-    color: #2B2A28;
-    margin-bottom: 40px; }
+    color: #2B2A28; }
+  .catalog_item .search_block {
+    position: relative;
+    top: 20px;
+    max-width: 417px;
+    width: 100%; }
+    .catalog_item .search_block .search:before {
+      content: "\f002";
+      display: inline-block;
+      font-family: "Font Awesome 6 Free", serif;
+      font-weight: 900;
+      position: absolute;
+      font-size: 25px;
+      color: #CB8734; }
+    .catalog_item .search_block .search label {
+      display: none; }
+    .catalog_item .search_block .search input {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #828282;
+      background: transparent;
+      padding-bottom: 17px;
+      padding-left: 40px;
+      font-family: 'Gilroy 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: #828282; }
   .catalog_item .filter_block {
     max-width: 270px;
     width: 100%;
@@ -1430,7 +1461,8 @@ footer {
     width: 100%;
     justify-content: space-between;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: relative; }
     .catalog_item .goods_block .goods_item_bg {
       flex-basis: 270px;
       flex-shrink: 0;
@@ -1438,7 +1470,11 @@ footer {
       box-shadow: 0 0 30px rgba(43, 42, 40, 0.08);
       border-radius: 0 40px 0 0;
       padding: 5px 5px 25px 5px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      transition: 0.4s;
+      position: relative; }
+      .catalog_item .goods_block .goods_item_bg:hover {
+        transform: scale(1.1); }
       .catalog_item .goods_block .goods_item_bg .good_item_img {
         max-width: 260px;
         height: 180px;
@@ -1497,14 +1533,119 @@ footer {
           display: block;
           margin-left: 18px; }
         .catalog_item .goods_block .goods_item_bg .price p {
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           font-family: 'Gilroy 700', serif;
           font-style: normal;
           font-weight: 700;
           font-size: 13px;
           line-height: 16px;
-          text-align: center;
           color: #2B2A28;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          width: 110px;
+          height: 40px;
+          background: #FFFBF7;
+          border-radius: 4px; }
+  .catalog_item .range_block .range_block price-range {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+  .catalog_item .range_block price-range {
+    --thumb-size: 15px;
+    --thumb-color: #CB8734;
+    --thumb-shadow-size: 5px;
+    --track-size: 4px;
+    --track-color: #E7D8C7;
+    --track-highlight-color: #CB8734;
+    width: 100%;
+    display: block; }
+  .catalog_item .range_block price-range > div {
+    position: relative;
+    width: 100%;
+    height: var(--thumb-size); }
+  .catalog_item .range_block price-range > div > div {
+    width: 100%;
+    height: var(--track-size);
+    background: var(--track-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .catalog_item .range_block price-range input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .catalog_item .range_block price-range input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px; }
+  .catalog_item .range_block price-range input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 5px; }
+  .catalog_item .range_block price-range input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px; }
+  .catalog_item .range_block price-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -5px;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: var(--thumb-color);
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 var(--thumb-color);
+    transition: box-shadow 0.15s ease; }
+  .catalog_item .range_block price-range input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: var(--thumb-color);
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 var(--thumb-color);
+    transition: box-shadow 0.15s ease; }
+  .catalog_item .range_block price-range input[type="range"]::-ms-thumb {
+    appearance: none;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: var(--thumb-color);
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 var(--thumb-color);
+    transition: box-shadow 0.15s ease; }
+  .catalog_item .range_block price-range input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 var(--thumb-shadow-size) var(--thumb-color); }
+  .catalog_item .range_block price-range input[type="range"]::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 var(--thumb-shadow-size) var(--thumb-color); }
+  .catalog_item .range_block price-range input[type="range"]::-ms-thumb:hover {
+    box-shadow: 0 0 0 var(--thumb-shadow-size) var(--thumb-color); }
+  .catalog_item .range_block price-range output {
+    display: block;
+    margin-top: 1rem;
+    text-align: center; }
+  .catalog_item .range_block output {
+    font-family: 'Gilroy 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #2B2A28; }
 
 /*# sourceMappingURL=style.css.map */

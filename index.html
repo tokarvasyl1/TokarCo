@@ -454,11 +454,17 @@
     <div class="container breads">
         <p>Главная страница / Жилое</p>
     </div>
-    <div class="container">
+    <div class="container d-flex name_search">
         <div class="category_name">
             <h2>Каталог жилых строений</h2>
         </div>
         <div class="search_block">
+            <form action="#" name="search">
+                <div class="search">
+                    <label for="search"></label>
+                    <input type="search" id="search" placeholder="Поиск по жилым строениям...">
+                </div>
+            </form>
         </div>
     </div>
     <div class="container d-flex">
@@ -494,6 +500,44 @@
                         <li><a href="#">Классические дома</a></li>
                         <li><a href="#">Дачи</a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="heading">Цена</div>
+                <div class="contents">
+                    <div class="range_block">
+                        <price-range currency="грн">
+                            <div>
+                                <div>
+                                    <input name="price-from" type="range" min="100000" max="3000000" step="10000" value="0" aria-label="From"/>
+                                    <input name="price-to" type="range" min="100000" max="3000000" step="10000" value="0" aria-label="To"/>
+                                </div>
+                            </div>
+                            <output>
+                                output
+                            </output>
+                        </price-range>
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="heading">Площадь</div>
+                <div class="contents">
+                    <div class="range_block">
+                        <price-range currency="м2">
+                            <div>
+                                <div>
+                                    <input name="price-from" type="range" min="0" max="300" step="10" value="0" aria-label="From"/>
+                                    <input name="price-to" type="range" min="0" max="300" step="10" value="0" aria-label="To"/>
+                                </div>
+                            </div>
+                            <output>
+                                output
+                            </output>
+                        </price-range>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -616,6 +660,10 @@
         </div>
     </div>
 </section>
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
