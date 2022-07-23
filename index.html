@@ -458,16 +458,16 @@
         <div class="category_name">
             <h2>Каталог жилых строений</h2>
         </div>
-        <div class="search_block">
-            <form action="#" name="search">
-                <div class="search">
-                    <label for="search"></label>
-                    <input type="search" id="search" placeholder="Поиск по жилым строениям...">
-                </div>
-            </form>
-        </div>
+        <form action="#" name="search">
+            <div class="search_mobile"></div>
+            <div class="search_block">
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="Поиск">
+            </div>
+        </form>
     </div>
     <div class="container d-flex">
+        <div class="mobile_filter"></div>
         <div class="filter_block">
             <div class="accordion">
                 <div class="heading">Модульные дома</div>
@@ -509,8 +509,10 @@
                         <price-range currency="грн">
                             <div>
                                 <div>
-                                    <input name="price-from" type="range" min="100000" max="3000000" step="10000" value="0" aria-label="From"/>
-                                    <input name="price-to" type="range" min="100000" max="3000000" step="10000" value="0" aria-label="To"/>
+                                    <input name="price-from" type="range" min="100000" max="3000000" step="10000"
+                                           value="0" aria-label="From"/>
+                                    <input name="price-to" type="range" min="100000" max="3000000" step="10000"
+                                           value="0" aria-label="To"/>
                                 </div>
                             </div>
                             <output>
@@ -528,8 +530,10 @@
                         <price-range currency="м2">
                             <div>
                                 <div>
-                                    <input name="price-from" type="range" min="0" max="300" step="10" value="0" aria-label="From"/>
-                                    <input name="price-to" type="range" min="0" max="300" step="10" value="0" aria-label="To"/>
+                                    <input name="price-from" type="range" min="0" max="300" step="10" value="0"
+                                           aria-label="From"/>
+                                    <input name="price-to" type="range" min="0" max="300" step="10" value="0"
+                                           aria-label="To"/>
                                 </div>
                             </div>
                             <output>
@@ -542,6 +546,75 @@
             </div>
         </div>
         <div class="goods_block">
+            <div class="goods_item_bg">
+                <div class="good_item_img">
+                    <img src="images/garden.png" alt="">
+                </div>
+                <div class="goods_name">
+                    <h3>Вариант Z-65 «Bavariа»</h3>
+                </div>
+                <div class="goods_parameters">
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>7,5х9,5 м</p>
+                    </div>
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>11.5x15,5 м.</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <a href="#">Ознакомиться</a>
+                    <p>1 000 000 грн</p>
+                </div>
+            </div>
+
+            <div class="goods_item_bg">
+                <div class="good_item_img">
+                    <img src="images/garden.png" alt="">
+                </div>
+                <div class="goods_name">
+                    <h3>Вариант Z-65 «Bavaria»</h3>
+                </div>
+                <div class="goods_parameters">
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>7,5х9,5 м</p>
+                    </div>
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>11.5x15,5 м.</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <a href="#">Ознакомиться</a>
+                    <p>1 000 000 грн</p>
+                </div>
+            </div>
+
+            <div class="goods_item_bg">
+                <div class="good_item_img">
+                    <img src="images/garden.png" alt="">
+                </div>
+                <div class="goods_name">
+                    <h3>Вариант Z-65 «Bavaria»</h3>
+                </div>
+                <div class="goods_parameters">
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>7,5х9,5 м</p>
+                    </div>
+                    <div class="size">
+                        <img src="images/parametr1.png" alt="">
+                        <p>11.5x15,5 м.</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <a href="#">Ознакомиться</a>
+                    <p>1 000 000 грн</p>
+                </div>
+            </div>
+
             <div class="goods_item_bg">
                 <div class="good_item_img">
                     <img src="images/garden.png" alt="">
@@ -660,9 +733,6 @@
         </div>
     </div>
 </section>
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"

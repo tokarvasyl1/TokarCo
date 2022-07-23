@@ -241,3 +241,26 @@ class PriceRange extends HTMLElement {
 
 customElements.define('price-range', PriceRange);
 
+
+
+
+$(document).ready(function(){
+    var $searchIcon = $('.search-icon');
+    var $searchInput = $('.search-input');
+
+    $searchIcon.click(function(){
+        $searchInput.toggleClass('open');
+    });
+});
+
+
+
+$(document).ready(function () {
+    $('.mobile_filter').click(function (event) {
+        $('.filter_block').toggleClass('active');
+        $(body).toggleClass('lock');
+    })
+    $('.search_mobile').click(function (event){
+        $('.search_block').toggleClass('active')
+    })
+})
