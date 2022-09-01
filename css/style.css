@@ -148,7 +148,7 @@ body {
 .header .sub-menu__list > li:hover {
   background: #2E8B1F;
   opacity: 0.8;
-  border-radius: 0px 50px 50px 0px; }
+  border-radius: 0 50px 50px 0; }
 .header .sub-menu__link {
   font-family: 'Alegreya Sans 400', serif;
   font-style: normal;
@@ -157,7 +157,7 @@ body {
   line-height: 30px;
   color: #000000;
   margin-left: 10px;
-  padding: 5px 0 5px 0px; }
+  padding: 5px 0 5px 0; }
 .header .arrow {
   display: none;
   position: absolute;
@@ -182,13 +182,13 @@ body {
   .header .menu__list {
     display: block; }
   .header .menu__list > li {
-    margin: 0px 0px 10px 0px; }
+    margin: 0 0 10px 0; }
   .header .sub-menu__list {
     position: relative;
     left: 0;
     top: 0; }
   .header .sub-sub-menu__list {
-    padding: 0px 5px;
+    padding: 0 5px;
     position: relative;
     left: 0;
     top: 0; }
