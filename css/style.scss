@@ -178,10 +178,11 @@ body {
     }
   }
 
-  .menu_line{
+  .menu_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 85px;
   }
+
   .menu {
     position: relative;
     z-index: 2;
@@ -230,8 +231,8 @@ body {
     border-radius: 20px;
   }
 
-  .sub-menu__list>li {
-    &:before{
+  .sub-menu__list > li {
+    &:before {
       content: "\f6c0";
       display: inline-block;
       font-family: "Font Awesome 6 Free", serif;
@@ -240,7 +241,8 @@ body {
       margin: 0 0 0 20px;
 
     }
-    &:hover{
+
+    &:hover {
       background: #2E8B1F;
       opacity: 0.8;
       border-radius: 0px 50px 50px 0px;
@@ -259,7 +261,7 @@ body {
 
 
   }
-  
+
 
   .arrow {
     display: none;
@@ -336,23 +338,24 @@ body.touch .arrow {
 //===================================
 
 
-
-
 //===================================
 .slider {
   margin-bottom: 85px;
+
   .container {
-    .slider_item{
+    .slider_item {
       position: relative;
       border-radius: 25px;
       overflow: hidden;
       height: 466px;
-      img{
+
+      img {
         display: block;
         width: 100%;
         object-fit: cover;
       }
-      h2{
+
+      h2 {
         font-family: 'Alegreya Sans 700', serif;
         font-style: normal;
         font-weight: 700;
@@ -362,7 +365,8 @@ body.touch .arrow {
         top: 150px;
         left: 100px;
       }
-      a{
+
+      a {
         position: absolute;
         top: 250px;
         left: 100px;
@@ -380,50 +384,54 @@ body.touch .arrow {
     }
   }
 }
-//===================================
-
-
 
 //===================================
-.popular_models{
+
+
+//===================================
+.popular_models {
   margin-bottom: 153px;
-  .popular_model_items{
+
+  .popular_model_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px 5px;
-    @include max-screen(849px){
+    @include max-screen(849px) {
       justify-content: space-around;
     }
 
-    .popular_model_item{
+    .popular_model_item {
       flex-basis: 270px;
       flex-shrink: 0;
       background: #FFFFFF;
       box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
       border-radius: 20px;
       padding: 26px 0 40px 0;
-      @include max-screen(849px){
+      @include max-screen(849px) {
         flex-basis: 300px;
       }
-      @include max-screen(635px){
+      @include max-screen(635px) {
         flex-basis: 80%;
       }
 
 
-      .item_img{
+      .item_img {
         max-width: 244px;
         width: 100%;
         height: 209px;
         margin: auto auto 10px;
-        img{
+
+        img {
           display: block;
           width: 100%;
         }
       }
-      .item_name{
+
+      .item_name {
         margin: 0 32px 14px 32px;
-        p{
+
+        p {
           font-family: 'Alegreya Sans 400', serif;
           font-style: normal;
           font-weight: 400;
@@ -434,10 +442,12 @@ body.touch .arrow {
           }
         }
       }
-      .item_size{
+
+      .item_size {
         margin: 0 32px 14px 32px;
         display: flex;
-        p, span{
+
+        p, span {
           font-family: 'Alegreya Sans 300', serif;
           font-style: normal;
           font-weight: 300;
@@ -447,13 +457,16 @@ body.touch .arrow {
             font-size: 18px;
           }
         }
-        p{
+
+        p {
           margin-right: 8px;
         }
       }
-      .item_price{
+
+      .item_price {
         margin: 0 32px 5px 32px;
-        p{
+
+        p {
           font-family: 'Roboto 400', serif;
           font-style: normal;
           font-weight: 400;
@@ -462,10 +475,12 @@ body.touch .arrow {
           text-align: center;
         }
       }
-      .item_btn{
+
+      .item_btn {
         display: flex;
         justify-content: center;
-        a{
+
+        a {
           padding: 15px 50px;
           font-family: 'Alegreya Sans 300', serif;
           font-style: normal;
@@ -475,11 +490,12 @@ body.touch .arrow {
           border: 1px solid #2E8B1F;
           border-radius: 40px;
           transition: 0.1s ease;
-          @include max-screen(635px){
+          @include max-screen(635px) {
             width: 90%;
             text-align: center;
           }
-          &:hover{
+
+          &:hover {
             background-color: #2E8B1F;
             color: white;
             transition: 0.1s ease;
@@ -488,24 +504,395 @@ body.touch .arrow {
         }
 
 
-
-
       }
     }
   }
 }
-//===================================
-
-
 
 //===================================
-.about_us{
 
+
+//===================================
+.about_us {
+  margin-bottom: 50px;
+
+  h2 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .about_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .about_left {
+      padding: 41px 35px;
+      flex-basis: 50%;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      @include max-screen(1000px) {
+        flex-basis: 55%;
+      }
+      @include max-screen(900px) {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+      @include max-screen(600px) {
+        padding: 20px 20px;
+      }
+
+      p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+        @include max-screen(450px) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .about_right {
+      flex-basis: 40%;
+      border-radius: 20px;
+      overflow: hidden;
+      @include max-screen(900px) {
+        flex-basis: 100%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }
+
 //===================================
 
 
+//===================================
+.contact_us {
+  margin-bottom: 35px;
 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact_left {
+    padding: 23px 55px 23px 55px;
+    flex-basis: 60%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 0 0 20px;
+    @include max-screen(1050px) {
+      flex-basis: 50%;
+      padding: 23px 20px;
+    }
+    @include max-screen(800px) {
+      flex-basis: 100%;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .tel {
+    margin-bottom: 25px;
+  }
+
+  .email {
+    margin-bottom: 25px;
+  }
+
+  .working_time {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 30px;
+    @include max-screen(1050px) {
+      font-size: 30px;
+    }
+  }
+
+  .tittle {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 12px;
+    @include max-screen(900px) {
+      font-size: 20px;
+    }
+  }
+
+  .sales, .logistic {
+    font-family: 'Alegreya Sans 300', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: darkgray;
+    @include max-screen(900px) {
+      font-size: 16px;
+    }
+
+    & > span {
+      font-family: 'Alegreya Sans 500', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #000000;
+      margin-left: 10px;
+      @include max-screen(900px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .heo > span {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    @include max-screen(1050px) {
+      font-size: 16px;
+    }
+
+  }
+
+  .contact_right {
+    flex-basis: 40%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0 20px 20px 0;
+    @include max-screen(1050px) {
+      flex-basis: 50%;
+    }
+    @include max-screen(800px) {
+      flex-basis: 100%;
+      border-radius: 20px;
+      height: 300px;
+      overflow: hidden;
+    }
+  }
+}
+
+//===================================
+
+//===================================
+.footer {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.25);
+  padding: 40px 0 50px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include max-screen(800px) {
+      justify-content: space-around;
+    }
+
+    .footer_logo {
+      max-width: 196px;
+      width: 100%;
+      @include max-screen(800px) {
+        max-width: inherit;
+        flex-basis: 40%;
+        order: 3;
+      }
+      @include max-screen(400px) {
+        flex-basis: 100%;
+        order: 4;
+        text-align: center;
+      }
+      img {
+        display: block;
+        width: 80%;
+        margin-bottom: 40px;
+        @include max-screen(800px) {
+          width: 150px;
+        }
+        @include max-screen(400px) {
+          margin: auto;
+        }
+      }
+
+      a {
+        display: block;
+        font-family: 'Roboto 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        opacity: 0.6;
+        margin-bottom: 19px;
+        &:first-of-type{
+          opacity: 1  ;
+        }
+      }
+    }
+
+    .footer_company {
+      max-width: 190px;
+      width: 100%;
+      @include max-screen(800px) {
+        max-width: inherit;
+        flex-basis: 40%;
+        order: 1;
+      }
+
+
+
+      h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+
+      }
+    }
+
+    .footer_goods {
+      max-width: 190px;
+      width: 100%;
+      @include max-screen(800px) {
+        max-width: inherit;
+        flex-basis: 40%;
+        order: 1;
+        margin-bottom: 50px;
+      }
+
+
+      h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+
+      }
+    }
+
+    .footer_contacts {
+      max-width: 190px;
+      width: 100%;
+      @include max-screen(800px) {
+        max-width: inherit;
+        flex-basis: 40%;
+        order: 4;
+      }
+      @include max-screen(400px) {
+        flex-basis: 100%;
+        order: 3;
+        text-align: center;
+      }
+
+      p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+
+      }
+      .footer_tel{
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 12px;
+        cursor: pointer;
+        display: block;
+
+
+      }
+      .footer_social{
+        display: flex;
+        justify-content: space-between;
+        @include max-screen(800px) {
+          justify-content: space-around;
+        }
+        @include max-screen(400px) {
+          margin-bottom: 30px;
+        }
+        a{
+          display: block;
+        }
+        span:before{
+          content: "";
+          display: inline-block;
+        }
+        .inst:before{
+          content: "\f16d";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black;
+        }
+        .youtube:before{
+          content: "\f167";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black;
+        }
+        .fb:before{
+          content: "\f39e";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+
+
+//===================================
 
 
 

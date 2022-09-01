@@ -53,5 +53,16 @@ if(isMobile.any()){
 
 
 
+$(document).ready(function () {
+    $('.footer_tittle').click(function (event) {
+        $('.footer_items').toggleClass('active');
+    })
+})
+
+
+
+
+
+
 
 

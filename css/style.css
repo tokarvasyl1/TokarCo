@@ -331,4 +331,296 @@ body.touch .arrow {
             color: white;
             transition: 0.1s ease; }
 
+.about_us {
+  margin-bottom: 50px; }
+  .about_us h2 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 40px; }
+  .about_us .about_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .about_us .about_row .about_left {
+      padding: 41px 35px;
+      flex-basis: 50%;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px; }
+      @media screen and (max-width: 1000px) {
+        .about_us .about_row .about_left {
+          flex-basis: 55%; } }
+      @media screen and (max-width: 900px) {
+        .about_us .about_row .about_left {
+          flex-basis: 100%;
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 600px) {
+        .about_us .about_row .about_left {
+          padding: 20px 20px; } }
+      .about_us .about_row .about_left p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000; }
+        @media screen and (max-width: 450px) {
+          .about_us .about_row .about_left p {
+            font-size: 15px; } }
+    .about_us .about_row .about_right {
+      flex-basis: 40%;
+      border-radius: 20px;
+      overflow: hidden; }
+      @media screen and (max-width: 900px) {
+        .about_us .about_row .about_right {
+          flex-basis: 100%; } }
+      .about_us .about_row .about_right img {
+        display: block;
+        width: 100%; }
+
+.contact_us {
+  margin-bottom: 35px; }
+  .contact_us .container {
+    display: flex;
+    flex-wrap: wrap; }
+  .contact_us .contact_left {
+    padding: 23px 55px 23px 55px;
+    flex-basis: 60%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 0 0 20px; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .contact_left {
+        flex-basis: 50%;
+        padding: 23px 20px; } }
+    @media screen and (max-width: 800px) {
+      .contact_us .contact_left {
+        flex-basis: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px; } }
+  .contact_us .tel {
+    margin-bottom: 25px; }
+  .contact_us .email {
+    margin-bottom: 25px; }
+  .contact_us .working_time {
+    margin-bottom: 25px; }
+  .contact_us h3 {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 1050px) {
+      .contact_us h3 {
+        font-size: 30px; } }
+  .contact_us .tittle {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 12px; }
+    @media screen and (max-width: 900px) {
+      .contact_us .tittle {
+        font-size: 20px; } }
+  .contact_us .sales, .contact_us .logistic {
+    font-family: 'Alegreya Sans 300', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: darkgray; }
+    @media screen and (max-width: 900px) {
+      .contact_us .sales, .contact_us .logistic {
+        font-size: 16px; } }
+    .contact_us .sales > span, .contact_us .logistic > span {
+      font-family: 'Alegreya Sans 500', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #000000;
+      margin-left: 10px; }
+      @media screen and (max-width: 900px) {
+        .contact_us .sales > span, .contact_us .logistic > span {
+          font-size: 16px; } }
+  .contact_us .heo > span {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .heo > span {
+        font-size: 16px; } }
+  .contact_us .contact_right {
+    flex-basis: 40%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0 20px 20px 0; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .contact_right {
+        flex-basis: 50%; } }
+    @media screen and (max-width: 800px) {
+      .contact_us .contact_right {
+        flex-basis: 100%;
+        border-radius: 20px;
+        height: 300px;
+        overflow: hidden; } }
+
+.footer {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.25);
+  padding: 40px 0 50px 0; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 800px) {
+      .footer .container {
+        justify-content: space-around; } }
+    .footer .container .footer_logo {
+      max-width: 196px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_logo {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 3; } }
+      @media screen and (max-width: 400px) {
+        .footer .container .footer_logo {
+          flex-basis: 100%;
+          order: 4;
+          text-align: center; } }
+      .footer .container .footer_logo img {
+        display: block;
+        width: 80%;
+        margin-bottom: 40px; }
+        @media screen and (max-width: 800px) {
+          .footer .container .footer_logo img {
+            width: 150px; } }
+        @media screen and (max-width: 400px) {
+          .footer .container .footer_logo img {
+            margin: auto; } }
+      .footer .container .footer_logo a {
+        display: block;
+        font-family: 'Roboto 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        opacity: 0.6;
+        margin-bottom: 19px; }
+        .footer .container .footer_logo a:first-of-type {
+          opacity: 1; }
+    .footer .container .footer_company {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_company {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 1; } }
+      .footer .container .footer_company h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+      .footer .container .footer_company a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+    .footer .container .footer_goods {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_goods {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 1;
+          margin-bottom: 50px; } }
+      .footer .container .footer_goods h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+      .footer .container .footer_goods a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+    .footer .container .footer_contacts {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_contacts {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 4; } }
+      @media screen and (max-width: 400px) {
+        .footer .container .footer_contacts {
+          flex-basis: 100%;
+          order: 3;
+          text-align: center; } }
+      .footer .container .footer_contacts p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000; }
+      .footer .container .footer_contacts .footer_tel {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 12px;
+        cursor: pointer;
+        display: block; }
+      .footer .container .footer_contacts .footer_social {
+        display: flex;
+        justify-content: space-between; }
+        @media screen and (max-width: 800px) {
+          .footer .container .footer_contacts .footer_social {
+            justify-content: space-around; } }
+        @media screen and (max-width: 400px) {
+          .footer .container .footer_contacts .footer_social {
+            margin-bottom: 30px; } }
+        .footer .container .footer_contacts .footer_social a {
+          display: block; }
+        .footer .container .footer_contacts .footer_social span:before {
+          content: "";
+          display: inline-block; }
+        .footer .container .footer_contacts .footer_social .inst:before {
+          content: "\f16d";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+        .footer .container .footer_contacts .footer_social .youtube:before {
+          content: "\f167";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+        .footer .container .footer_contacts .footer_social .fb:before {
+          content: "\f39e";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+
 /*# sourceMappingURL=style.css.map */
